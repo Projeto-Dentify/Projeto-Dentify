@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css" />
     <title>Dentify</title>
   </head>
   <body>
@@ -13,14 +13,187 @@
           <img src="src/img/logo2.png" alt="Logo" width="150" />
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Serviços</a></li>
             <li><a href="#">Corpo Clinico</a></li>
+            <li><a href="#">Serviços</a></li>
             <li><a href="#">Depoimentos</a></li>
-            <li><a href="#">Contatos</a></li>
-            <li><a href="#" target="_blank">Agende a sua Avaliação</a></li>
+            <li><a href="#">Agendamento</a></li>
+
+            <li><a href="#" target="_blank">Entre em contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <section class="home">
+      <img src="/src/img/banner_home.png" alt="Imagem doutores" />
+      <h1 class="titulo-home">Seu sorriso <br />Nossa prioridade</h1>
+      <p class="sub-titulo-home">
+        Cuidado humanizado e tecnologia de ponta para sua saúde bucal
+      </p>
+      <a href="#" class="botao-consulta">Agende sua consulta</a>
+    </section>
+
+    <section class="container-primario">
+      <h1>Conheça nossos especialistas</h1>
+
+      <div class="carrossel-container-principal">
+        <div class="carrossel-container" id="carrossel-container">
+          <img
+            class="slide"
+            src="/src/img/dr_luciano.png"
+            alt="doutor_luciano"
+          />
+          <p>kkkkkkkkk</p>
+          <p>kkkkkkkkk</p>
+          <img class="slide" src="/src/img/dr_mauro.png" alt="doutor_mauro" />
+          <p>kkkkkkkkk</p>
+          <p>kkkkkkkkk</p>
+          <img
+            class="slide"
+            src="/src/img/dr_ricardo.png"
+            alt="doutor_ricardo"
+          />
+          <p>kkkkkkkkk</p>
+          <p>kkkkkkkkk</p>
+          <img class="slide" src="/src/img/dra_ana.png" alt="doutora_ana" />
+          <p>kkkkkkkkk</p>
+          <p>kkkkkkkkk</p>
+          <img class="slide" src="/src/img/dra_julia.png" alt="doutora_julia" />
+          <p>kkkkkkkkk</p>
+          <p>kkkkkkkkk</p>
+          <img class="slide" src="/src/img/dra_laura.png" alt="doutura_laura" />
+          <p>kkkkkkkkk</p>
+          <p>kkkkkkkkk</p>
+          <img
+            class="slide"
+            src="/src/img/dra_patricia .png"
+            alt="doutora_patricia"
+          />
+          <p>kkkkkkkkk</p>
+          <p>kkkkkkkkk</p>
+          <img
+            class="slide"
+            src="/src/img/dra_rayssa.png"
+            alt="doutora_rayssa"
+          />
+          <p>kkkkkkkkk</p>
+          <p>kkkkkkkkk</p>
+          <img
+            class="slide"
+            src="/src/img/dra_vanessa.png"
+            alt="doutora_vanessa"
+          />
+          <p>kkkkkkkkk</p>
+          <p>kkkkkkkkk</p>
+        </div>
+      </div>
+
+      <div class="controles">
+        <button onclick="voltar()">◀</button>
+        <button onclick="avancar()">▶</button>
+      </div>
+    </section>
+
+    <section class="container-servicos">
+      <h2>Serviços em Destaque</h2>
+      <div class="card-servicos">
+        <article>
+          <img src="/src/img/primeiro-serviço.png" alt="primeiro" />
+          <p class="titulo-servicos">Titulo</p>
+          <p>Paragrafo</p>
+        </article>
+
+        <article>
+          <img src="/src/img/segundo-serviço.png" alt="segundo" />
+          <p class="titulo-servicos">Titulo</p>
+          <p>Paragrafo</p>
+        </article>
+
+        <article>
+          <img src="/src/img/terceiro-serviço.png" alt="terceiro" />
+          <p class="titulo-servicos">Titulo</p>
+          <p>Paragrafo</p>
+        </article>
+      </div>
+    </section>
+
+    <h2>Sorrisos que transformamos</h2>
+    <hr />
+    <section class="container-secundario">
+      <div class="card-clientes">
+        <article>
+          <img src="/src/img/cliente_fernanda.png" alt="cliente_fernanda" />
+          <p class="titulo-paciente">Titulo</p>
+          <p>Paragrafo</p>
+        </article>
+
+        <article>
+          <img src="/src/img/cliente_marcio.png" alt="cliente_marcio" />
+          <p class="titulo-paciente">Titulo</p>
+          <p>Paragrafo</p>
+        </article>
+
+        <article>
+          <img src="/src/img/cliente_maria.png" alt="cliente_maria" />
+          <p class="titulo-paciente">Titulo</p>
+          <p>Paragrafo</p>
+        </article>
+      </div>
+    </section>
+
+    <hr />
+    <section class="agendamento">
+      <h2>Agende uma Avaliação</h2>
+      <form>
+        <div class="form-nome">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            required
+          />
+        </div>
+
+        <div class="form-email">
+          <label for="e-mail">E-mail:</label>
+          <input
+            type="e-mail"
+            id="e-mail"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+
+        <div class="form-telefone">
+          <label for="telefone">Telefone:</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="Digite seu telefone"
+            required
+          />
+        </div>
+
+        <div class="servicos">
+          <label for="servico">Serviço desejado:</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option value="site">kakakakaa</option>
+            <option value="logotipo">Design de Logotipo</option>
+            <option value="marketing">Marketing Digital</option>
+          </select>
+        </div>
+
+        <button class="botao-enviar" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>Todos os diretiros reservados à Dentify.</footer>
+
+    <script src="/src/script/script.js"></script>
   </body>
 </html>

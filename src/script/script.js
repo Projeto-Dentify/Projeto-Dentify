@@ -30,3 +30,24 @@ function voltar() {
   }
   atualizarCarrossel();
 }
+
+const form = document.getElementById("formAgendamento");
+const msg = document.getElementById("msgStatus");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: formData,
+  });
+
+  if (response.ok) {
+    msg.textContent = "Solicitação enviada com sucesso!";
+    form.reset();
+  } else {
+    msg.textContent = "Erro ao enviar. Tente novamente.";
+  }
+});
